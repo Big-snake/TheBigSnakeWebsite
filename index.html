@@ -3,9 +3,12 @@
   <title>Big snake website</title>
 </head>
 <nav class="topbar">
-<img src="logo.png"  width=90 height=90>
-<a href="/loby.html">Next page</a>
+<img class="logo"  src="logo.png"  width=90 height=90>
+
 </nav>
+
+
+
 <hr>
 <h1 class="Hi">Welcome to my website!</h1>
 <style>
@@ -44,6 +47,7 @@ height:500;
   .topbar {
   font-size:40;
     position: relative;
+    text-align:center;
     
   }
   
@@ -53,23 +57,54 @@ height:500;
   }
   
   .wa {
-   font-size:60 
+   font-size:60; 
   }
   .fg {
-   height:600 
+   height:600; 
   }
+  .logo {
+   border-radius: 25px;
+ 
+  }
+  
+ a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #cbd0d6;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.copyright {
+ position: relative;
+ text-align:center;
+ bottom:420;
+}
+
 </style>
 
 <div class="aboutme fg">
             <h1>Hi, There user!</h1>
   <h1> It seems you found  my website</h1>
   <h1 class="wa">THIS WEBSITE WAS JUST MADE IT IS 2% FINISHED!! </h1>
-  <h1> Update log: A big update to the website thats it</h1>
+  <h1> Update log: Content/topbar Update!</h1>
 </div>
 
 <div class="know aboutme">
-            <h1>Did you know?</h1>
-  <h1 class="df">This website took A lot of time</h1>
+            <h1>You might </h1>
+  <h1 class="df">Listen to something</h1>
+  <iframe src="https://open.spotify.com/embed/track/1F7RcB9EvmpgLTQ9nzKvmy" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="300px" width="500px" allowfullscreen></iframe>
 </div>
 
 <div class="might aboutme">
@@ -78,4 +113,5 @@ height:500;
 <iframe width="500" height="300" src="https://www.youtube.com/embed/gW7k2q3MpeE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<h2 class="copyright">This website is coded and made by <a class="bigsnake" href="https://github.com/big-snake">Big snake</a></h2>
 
