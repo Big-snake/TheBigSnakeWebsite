@@ -4,6 +4,7 @@
 </head>
 <nav class="topbar">
 <img class="logo"  src="logo.png"  width=100 height=90>
+<a class="toptext"href="slither.io">Play slither.io!</a>
 
 </nav>
 
@@ -51,6 +52,21 @@ height:500;
     
   }
   
+  .toptext {
+   text-align:left; 
+   font-size:40px;
+    position: relative;
+    top:-26px
+  
+  }
+  
+  .toptextleft {
+      text-align:right; 
+   font-size:40px;
+    position: relative;
+    top:-26px 
+  }
+  
   .might {
       position: relative;
       bottom:500;
@@ -68,7 +84,7 @@ height:500;
   }
   
  a:link {
-  color: red;
+  color: black;
 }
 
 /* visited link */
@@ -85,11 +101,22 @@ a:hover {
 a:active {
   color: blue;
 }
-
+ 
+ a {
+   text-decoration: none; 
+ }
+ 
 .copyright {
  position: relative;
  text-align:center;
- bottom:420;
+}
+
+.bottom {
+ background-color:#f2f2f2;
+ padding:10px;
+ width:100%;
+  height: 40%;
+  text-align:center;
 }
 
 </style>
@@ -98,7 +125,7 @@ a:active {
             <h1>Hi, There user!</h1>
   <h1> It seems you found  my website</h1>
   <h1 class="wa">THIS WEBSITE WAS JUST MADE IT IS 2% FINISHED!! </h1>
-  <h1> Update log: Content/topbar Update!</h1>
+  <h1> Update log: New bottom bar and play slither.io button!</h1>
 </div>
 
 <div class="know aboutme">
@@ -113,5 +140,8 @@ a:active {
 <iframe width="500" height="300" src="https://www.youtube.com/embed/gW7k2q3MpeE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<h2 class="copyright">This website is coded and made by <a class="bigsnake" href="https://github.com/big-snake">Big snake</a></h2>
 
+<div class="bottom">
+<h2 class="copyright">This website is coded and made by <a class="bigsnake" href="https://github.com/big-snake">Big snake</a></h2>
+<a href="github.com">Go to github</a>
+</div>
