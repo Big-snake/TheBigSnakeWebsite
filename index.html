@@ -12,21 +12,6 @@
 
 <hr>
 
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
 <nav class="sidebar">
 <img class="logo"  src="logo.png"  width=100 height=90>
 <a class="rgr" href="https://thebigsnakewebsite.co.uk/BUTTER">Butter</a>
@@ -41,6 +26,7 @@ body {
   overflow-x: hidden; 
 }
   
+  
    .sidebar {
     background-color:rgba(0,0,0 , 0.6);
     width:160px;
@@ -54,7 +40,7 @@ body {
   top: 0;
   left: 0;
   overflow-x: hidden;
-    
+    position : sticky;
   padding-top: 20px;
   }
   .rgr {
