@@ -78,7 +78,7 @@ body {
 width:500;
 height:500; 
     padding:30;
-    display: block;
+ 
   }
   
   .know { 
@@ -94,9 +94,15 @@ height:500;
   .topbar {
   font-size:40;
 top:0;
-    background-color: rgba(35, 110, 215, 0.8);
-      position: sticky;
-    
+    background-color: rgba(0, 0, 0, 0.8);
+      position:sticky;
+    z-index:1;
+     overflow-x: hidden;
+      overflow-y: hidden;
+            border-radius: 25px;
+          padding:9;
+            top: 0;
+            
   }
   
   .main {
@@ -167,6 +173,11 @@ a:active {
   height: 40%;
   text-align:center;
 }
+
+.black {
+  z-index: -1; 
+  background:col
+}
 </style>
   
  
@@ -174,7 +185,7 @@ a:active {
             <h1>Hi, There user!</h1>
   <h1> It seems you found  my website</h1>
   <h1 class="wa">This website is 6% finished! </h1>
-  <h1> Update log: Sticky topbar! (W.I.P)</h1>
+  <h1> Update log: Topbar update!</h1>
 </div>
 
 <div class="know aboutme">
@@ -200,10 +211,10 @@ a:active {
  
  $(window).on("scroll",function() {
    if ($(window).scrollTop()) {
-     $'topbar'.addClass('black');
+     $'nav'.addClass('black');
    }
    else {
-       $'topbar'.removeClass('black');
+       $'nav'.removeClass('black');
    }
  })
 </script>
