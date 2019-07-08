@@ -86,13 +86,13 @@ height:500;
 
  
   .aboutme {
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(4,101,159,1) 16%, rgba(0,129,255,1) 100%);
-    color:#fff;
+background-color:black;
+    color:#000;
       border-radius: 25px;
 width:500;
 height:500; 
     padding:30;
+	  
      transition: 2s;
   }
   
