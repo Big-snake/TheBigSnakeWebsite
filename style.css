@@ -93,7 +93,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(4,101,159,1) 16%, rgba
 width:500;
 height:500; 
     padding:30;
-   transition: 2s;
+     transition: 2s;
   }
   
   .toptexta {
