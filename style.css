@@ -139,6 +139,12 @@ top:0;
             
   }
   
+.lxogo {
+   border-radius: 25px;
+ text-align:center;
+float:left;	
+}
+
   .main {
    position: relative;
     left:160px;
