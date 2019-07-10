@@ -82,30 +82,8 @@ width:500;
 height:500; 
     padding:30;
    opacity: 1;
-	  
-	  
-	  background: linear-gradient(248deg, #00d0ff, #003eff);
-background-size: 400% 400%;
-
--webkit-animation: AnimationName 45s ease infinite;
--moz-animation: AnimationName 45s ease infinite;
-animation: AnimationName 45s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:87% 0%}
-    50%{background-position:14% 100%}
-    100%{background-position:87% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:87% 0%}
-    50%{background-position:14% 100%}
-    100%{background-position:87% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:87% 0%}
-    50%{background-position:14% 100%}
-    100%{background-position:87% 0%}
-}
+	      background: linear-gradient(248deg, rgb(0, 208, 255), rgb(0, 62, 255)) 0% 0% / 200% 200%;
+    animation: 45s ease 0s infinite normal none running CustomAnimation;
   }
 
 
