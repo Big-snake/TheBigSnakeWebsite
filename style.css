@@ -85,23 +85,28 @@ height:500;
   }
 
 .aboutme:hover {
-background: linear-gradient(215deg, #00ffbe, #003eff);
-background-size: 400% 400%;
-
--webkit-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 60%}
-    50%{background-position:100% 41%}
-    100%{background-position:0% 60%}
+	
+	
+	@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
 }
-@keyframes AnimationName { 
-    0%{background-position:0% 60%}
-    50%{background-position:100% 41%}
-    100%{background-position:0% 60%}
-}	
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
 }
+
+	
+	
+{
  
   .aboutme {
 background-color:black;
