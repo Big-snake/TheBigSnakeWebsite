@@ -84,6 +84,24 @@ height:500;
    opacity: 1;
   }
 
+.aboutme:hover {
+background: linear-gradient(215deg, #00ffbe, #003eff);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}	
+}
  
   .aboutme {
 background-color:black;
