@@ -146,7 +146,7 @@ float:left;
 }
 
   .main {
-   position: relative;
+   position: absolute;
     left:160px;
     overflow-x: hidden;
   }
