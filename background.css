@@ -1,4 +1,4 @@
-body {
+.aboutme {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
@@ -45,3 +45,12 @@ body {
 	}
 }
 
+
+.hi {
+    color: #00b6ff;
+    background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 60s infinite linear;
+}
