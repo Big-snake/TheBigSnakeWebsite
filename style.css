@@ -73,8 +73,8 @@ body {
 }
  
   .aboutme:hover {
-   	-webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
+       background: -webkit-gradient(linear, left top, right top, from(#0072ff), to(#00d4ff));
+    background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
 
 	  
     color:#fff;
