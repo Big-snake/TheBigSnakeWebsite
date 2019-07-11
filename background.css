@@ -1,7 +1,3 @@
-.aboutme:hover{
-	-webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}
 
 .hi {
     color: #00b6ff;
