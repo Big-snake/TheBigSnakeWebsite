@@ -31,8 +31,17 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
 </script>
 
+		<script>
+			  var element = document.getElementById("myHeader");
+	if(window.scrollY==0){
+   element.classList.remove("nav");
+	}
+}
+	</script>
+	
   <title>Big snake website (No java script)</title>
    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" /> 
   <link rel="stylesheet" type="text/css" href="https://thebigsnakewebsite.co.uk/style.css">
