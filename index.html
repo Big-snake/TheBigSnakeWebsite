@@ -35,11 +35,13 @@ function myFunction() {
 </script>
 
 		<script>
-		var element = document.getElementById("myHeader");
 	if(window.scrollY==0){
-		 element.classList.remove("nav");
+		function() {myDw()};
+		  function myDw() {
+	  document.getElementById("myHeader").classList.remove('nav');  
 	}
 }
+			}
 	</script>
 	
   <title>Big snake website (No java script)</title>
@@ -55,7 +57,11 @@ function myFunction() {
 
   <style> 
   
-
+.nav {
+	-webkit-box-shadow: 10px 10px 13px 19px rgba(0,0,0,0.2);
+-moz-box-shadow: 10px 10px 13px 19px rgba(0,0,0,0.2);
+box-shadow: 10px 10px 13px 19px rgba(0,0,0,0.2);
+	  }
 
 
   .toptextddqa{
