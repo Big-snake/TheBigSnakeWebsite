@@ -5,7 +5,11 @@
 
 
   <script>
-
+  window.onscroll = function() {mydD()};
+  function mydD() {
+	    var x = document.getElementById("text");
+   x.style.display = "none";
+  }
   </script>
   
   <title>Big snake website</title>
@@ -69,7 +73,7 @@ function myFunction() {
   window.onscroll = function() {myD()};
   function myD() {
   document.getElementById("myHeader").classList.add('nav');  
-	window.stop();
+
   }
   </script>
 </head>
@@ -262,6 +266,10 @@ top:0;
   font-size:5rem;
 }
 
+	#text {
+		text-align:right;
+	}
+	
 .maintop {
  height:100vh;
  background-color:black;
@@ -313,6 +321,7 @@ top:0;
 <div id="main" class="main">
 
 <section class="maintop">
+	<h3 id="text">Version 1.6</h3>
 <center>
 <h1 class="Hi">Welcome to my website!</h1>
 <h2 class="sub hi">Scroll down!</h2>
@@ -325,8 +334,8 @@ top:0;
             <h1>Hi, There user!</h1>
   <h1> This is the offical big snake website!</h1>
   <h1 class="wa">This website is 7% finished! </h1>
-  <h1> This update: Gradint update! </h1>
-  <h2>Last update: Animation Update!</h2>
+  <h1> This update:  Big update </h1>
+  <h2>Last update:  Gradint update! </h2>
 </div>
 
 <div class="know aboutme">
