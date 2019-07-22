@@ -2,7 +2,15 @@
 <head>
 
 
-
+<script>
+	var shown = false;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		var shown = true;
+		 var x = document.getElementById("main");
+ x.style.display = "none";
+		
+}
+	</script>
 
   <script>
   window.onscroll = function() {mydD()};
@@ -94,7 +102,7 @@ function myFunction() {
   </script>
 </head>
 <noscript class="noscript">
-	Please enable javascript to use the topbar.
+	To use the full functions of the website please enable javascript.
 </noscript>
   <style> 
   
