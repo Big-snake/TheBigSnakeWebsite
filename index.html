@@ -5,15 +5,8 @@
 <script>
 	var shown = false;
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		shown = true;
-		 var x = document.getElementById("main");
- x.style.display = "none";
-	
-		
-		   if (!shown) {
- var sa = document.getElementById("fasd");
-        shown = true;
-			     sa.style.display = "block";
+	document.getElementById("ls").classList.remove('fsad');  
+document.getElementById("ls").classList.add('noss');  
     }
 }
 	</script>
@@ -114,10 +107,23 @@ function myFunction() {
 	To use the full functions of the website please enable javascript.
 </noscript>
 
-<h2 id="fsad" class="noscript ">Please go on a computer to use the website</h2>
+<h2 id="ls" class="fsad ">Please go on a computer to use the website</h2>
   <style> 
   
-	  #fsad {
+.noss {
+		background: #ffb12a;
+    color: #000;
+    display: block;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+  
+    z-index: 2;	
+		}
+
+
+	  .fsad {
 	display:none;	  
 	  }
 	  
