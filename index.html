@@ -5,10 +5,16 @@
 <script>
 	var shown = false;
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		var shown = true;
+		shown = true;
 		 var x = document.getElementById("main");
  x.style.display = "none";
+	
 		
+		   if (!shown) {
+ var sa = document.getElementById("fasd");
+        shown = true;
+			     sa.style.display = "block";
+    }
 }
 	</script>
 
@@ -101,11 +107,20 @@ function myFunction() {
   }
   </script>
 </head>
+
+
+
 <noscript class="noscript">
 	To use the full functions of the website please enable javascript.
 </noscript>
+
+<h2 id="fsad" class="noscript ">Please go on a computer to use the website</h2>
   <style> 
   
+	  #fsad {
+	display:none;	  
+	  }
+	  
 .nav {
 	-webkit-box-shadow: 10px 10px 13px 19px rgba(0,0,0,0.2);
 -moz-box-shadow: 10px 10px 13px 19px rgba(0,0,0,0.2);
