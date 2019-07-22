@@ -1,4 +1,4 @@
-   .nav , ndda {
+   .nav {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
   -webkit-animation-duration: 2s;
@@ -31,7 +31,7 @@
 
 
 
- .main {
+ .main, ndda {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
   -webkit-animation-duration: 2s;
