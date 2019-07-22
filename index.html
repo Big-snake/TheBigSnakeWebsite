@@ -12,10 +12,10 @@ document.getElementById("ls").classList.add('noss');
 	</script>
 
   <script>
-  window.onscroll = function() {mydD()};
-  function mydD() {
-	    var x = document.getElementById("text");
-   x.style.display = "none";
+  window.onscroll = function() {ma()};
+  function ma() {
+	  document.getElementById("text").classList.remove('txt');    
+
   }
   </script>
 	
@@ -359,7 +359,7 @@ top:0;
   }
 }
 	
-	#text {
+	.txt {
 	color:#fff;	
 	}
 </style>
@@ -370,7 +370,7 @@ top:0;
 <div id="main" class="main">
 
 <section class="maintop">
-	<h3 id="text">Version 1.6</h3>
+	<h3 id="text" class"txt">Version 1.6</h3>
 <center>
 <h1 class="Hi">Welcome to my website!</h1>
 <h2 class="sub hi">Scroll down!</h2>
