@@ -23,7 +23,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 899 || document.documentElement.scrollTop > 899) {
-	   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+	   if (document.body.scrollTop < 900 || document.documentElement.scrollTop < 900) {
  document.getElementById("myHeader").classList.add('nav');  document.getElementById("myHeader").classList.remove('ndda'); //Light
 	   }
   } else {
