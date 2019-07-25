@@ -20,15 +20,20 @@ document.getElementById("ls").classList.add('noss');
   </script>
 	
 	
-	
-	  <script>
-  window.onscroll = function() {msydD()};
-  function mydD() {
-	    var x = document.getElementById("myHeader");
-   x.style.display = "block";
+	<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 2) {
+ document.getElementById("myHeader").classList.add('nav');  document.getElementById("myHeader").classList.remove('ndda');
+  } else {
+      document.getElementById("myHeader").classList.remove('nav');  document.getElementById("myHeader").classList.add('ndda');
   }
-  </script>
-  
+}
+</script>
+	
+	
+
   <title>Big snake website</title>
 
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -61,44 +66,14 @@ document.getElementById("ls").classList.add('noss');
     z-index: 2;	
 		}
 	</style>
-<script>
+
+
 	
-	
-window.onscroll = function() {myFunction()};
-
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-</script>
-
-		<script>
-	if(window.scrollY==0){
-		function() {myDw()};
-		}
-		  function myDw() {
-	  var element = document.getElementById('myHeader');
-  element.classList.remove('nav');
-	
-}
-}
-	</script>
 	
   <title>Big snake website (No java script)</title>
    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" /> 
   <link rel="stylesheet" type="text/css" href="https://thebigsnakewebsite.co.uk/style.css">
-  <script>
-  window.onscroll = function() {myD()};
-  function myD() {
-  document.getElementById("myHeader").classList.add('nav');  
 
-  }
-  </script>
 </head>
 
 
