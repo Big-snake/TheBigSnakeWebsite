@@ -24,11 +24,12 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 899 || document.documentElement.scrollTop > 899) {
 	   if (document.body.scrollTop > 902 || document.documentElement.scrollTop > 902) {
- document.getElementById("myHeader").classList.add('nav');  document.getElementById("myHeader").classList.remove('ndda'); //Light
+ document.getElementById("myHeader").classList.add('nav');  
+		   document.getElementById("myHeader").classList.remove('ndda'); //Light
 	   }
   } else {
-	  	 ]
-      document.getElementById("myHeader").classList.remove('nav');  document.getElementById("myHeader").classList.add('ndda');//Dark
+      document.getElementById("myHeader").classList.remove('nav'); 
+	  document.getElementById("myHeader").classList.add('ndda'); //Dark
 
 }
 </script>
