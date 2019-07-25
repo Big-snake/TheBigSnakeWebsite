@@ -3,6 +3,11 @@
 
 
 <script>
+function scrolaa() {
+  window.scrollTo(0, 900);
+}
+</script>
+
 	var shown = false;
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	document.getElementById("ls").classList.remove('fsad');  
@@ -380,7 +385,8 @@ top:0;
             <h1>Hi, There user!</h1>
   <h1> This is the offical big snake website!</h1>
   <h1 class="wa">This website is 7% finished! </h1>
-  <h1> This update: Fixed topbar  </h1>
+	<h1> This update: Fixed topbar  </h1>
+	<h5>I can't fix the flashing issue on the topbar <button onclick="scrolaa()">Go to issue</button><h5>
   <h2>Last update:  Big update! </h2>
 </div>
 
