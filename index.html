@@ -23,13 +23,15 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-	 
- document.getElementById("myHeader").classList.add('nav');  
-		   document.getElementById("myHeader").classList.remove('ndda');
+      document.getElementById("myHeader").classList.nav('nav'); 
+	  document.getElementById("myHeader").classList.remove('ndda');
   } else {
+	    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 899) {
       document.getElementById("myHeader").classList.remove('nav'); 
 	  document.getElementById("myHeader").classList.add('ndda');
-
+	    }
+  }
+}
 }
 </script>
 	
