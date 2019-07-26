@@ -19,16 +19,15 @@ function scrolaa() {
 	
 	
 	<script>
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {myFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-      document.getElementById("myHeader").classList.nav('nav'); 
-	  document.getElementById("myHeader").classList.remove('ndda');
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+   document.getElementById("myHeader").classList.add('nav'); 
+	  document.getElementById("myHeader").classList.remove('ndda'); //Light script
   } else {
-	    
-      document.getElementById("myHeader").classList.remove('nav'); 
-	  document.getElementById("myHeader").classList.add('ndda');
+       document.getElementById("myHeader").classList.remove('nav'); 
+	  document.getElementById("myHeader").classList.add('ndda'); //Dark script
   }
 }
 
