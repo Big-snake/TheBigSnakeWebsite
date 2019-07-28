@@ -59,7 +59,20 @@ function myFunction() {
   src="https://code.jquery.com/jquery-3.4.1.js">
   </script>
 	
+	<script>
+		function rhs() {
+  document.body.style.overflow = "visible";
+
+
+}
+	</script>
+		
+	
 	<style>		
+		
+		body {
+		overflow:hidden;	
+		}
 		#text {
 		    position: relative;
     bottom: -700;	
@@ -99,7 +112,7 @@ function myFunction() {
   <link rel="stylesheet" type="text/css" href="https://thebigsnakewebsite.co.uk/style.css">
 
 </head>
-
+<body onload="rhs()">
 
 
 <noscript class="noscript">
@@ -464,4 +477,4 @@ top:0;
 <a href="https://github.com">Go to github</a>
 </div>
 </div>
- 
+		</body>
