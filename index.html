@@ -16,9 +16,15 @@ function scrolaa() {
   <script>
   window.onscroll = function() {ma()};
   function ma() {
-	
-
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("text").classList.remove('txt'); 
+	  document.getElementById("text").classList.add('hidden'); //Hidden
+  } else {
+      document.getElementById("text").classList.add('txt'); 
+	  document.getElementById("text").classList.remove('hidden'); //Hidden
   }
+}
+  
   </script>
 	
 	
@@ -69,6 +75,10 @@ function myFunction() {
     width: 100%;
   
     z-index: 2;	
+		}
+		
+		.hidden {
+		opacity:1;	
 		}
 	</style>
 
@@ -386,7 +396,7 @@ top:0;
 <div id="main" class="main">
 
 <section class="maintop">
-	<h3 id="text" class"txt">Version 1.7.1</h3>
+	<h3 id="text" class="txt">Version 1.7.1</h3>
 <center>
 <h1 class="Hi">Welcome to my website!</h1>
 <h2 class="sub hi">Scroll down!</h2>
