@@ -206,10 +206,19 @@ function white(x) {
 	function black(x) {
     document.getElementById("blacksd").classList.remove('blacksda'); 
 }	
+	 if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+		     document.getElementById("blacksd").classList.add('blackas'); 
+	 }
+	
 	
 </script>
 
 <style>
+	.blackas {
+		  transition: 1s;
+opacity:1;
+}
+	
 	
 	.blacksda {
 		  transition: 1s;
