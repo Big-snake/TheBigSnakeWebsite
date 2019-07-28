@@ -38,6 +38,7 @@ function myFunction() {
   } else {
           document.getElementById("myHeader").classList.remove('nav'); 
 	  document.getElementById("myHeader").classList.add('ndda'); //Hidden
+	  
   }
 }
 
@@ -78,7 +79,12 @@ function myFunction() {
 		}
 		
 		.hidden {
-		opacity:1;	
+		opacity:1;
+			     transition: 1s; 
+		}
+		
+		.txt {
+		     transition: 1s; 	
 		}
 	</style>
 
@@ -381,7 +387,7 @@ top:0;
 }
 	
 	.txt {
-	color:#fff;	
+	color:#000;	
 	}
 	
 	
