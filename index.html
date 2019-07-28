@@ -18,7 +18,7 @@ function scrolaa() {
   <script>
   window.onscroll = function() {ma()};
   function ma() {
-	  document.getElementById("text").classList.remove('txt');    
+	
 
   }
   </script>
@@ -165,7 +165,7 @@ top:0;
 left:-200px;
   text-align:center;
     display: block;
-
+opacity:0;
 }
     .toptext {
    right:250px;
@@ -189,15 +189,27 @@ left:-200px;
 
   </style>
 
-<nav id="myHeader" class="ndda ">
+<nav  onmouseout="black(this)" onmouseover="white(this)" id="myHeader" class="ndda ">
 <h4 class="lxogo">thebigsnakewebsite.co.uk</h4>
-<nav class="toptextddqa">
+<nav  id="blacksd" class="toptextddqa">
 <a class="toptextleft" href="/BUTTER">BUTTER</a>
 <a class="toptexta" href="/upislolgithub">MOTO MOTO</a>
 <a class="toptextad" href="/BIOS">BIOS</a>
 </nav>
 </nav>
 
+<script>
+function white(x) {
+    document.getElementById("blacksd").classList.add('blacksda'); 
+}
+	function black(x) {
+    document.getElementById("blacksd").classList.remove('blacksda'); 
+}	
+	
+</script>
+blacksda {
+opacity:1;
+}
 
 <style>
 	.ndda:hover {
@@ -309,7 +321,7 @@ top:0;
 	
 .maintop {
  height:100vh;
- background-color:black;
+ background-color:white;
  padding:5px;
 }
 .aros {
