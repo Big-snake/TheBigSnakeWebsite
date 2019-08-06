@@ -23,11 +23,17 @@ function scrolaa() {
 		document.getElementById("apaaaa").classList.add('bodydark'); 
 		document.getElementById("apaaaa").style.color = "#fff";
 		document.getElementById("blacksd").style.a.color="#fff";
-		
+		var nodesArray = document.getElementById('blacksd').getElementsByTagName('a');
+for (var i = 0; i < nodesArray.length; i++) {
+    nodesArray[i].style.color = 'white';
+}
 }
 	</script>
 	
 	<style>
+		.dark {
+		color:#fff !important;	
+		}
 		.darkgra:hover {
 		background: rgb(2,0,36) !important;	
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%)!important;	
