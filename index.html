@@ -11,7 +11,14 @@ function scrolaa() {
   window.scrollTo(0, 900);
 }
 </script>
-
+<script>
+	function dark() {
+   document.getElementById("maintop").classList.add('dark'); 
+	   document.getElementById("myHeader").classList.add('dark'); 	
+}
+	</script>
+	
+	
 	
   <script>
   window.onscroll = function() {ma()};
@@ -117,7 +124,7 @@ $('#bodyad').hide().fadeIn('4000');
     opacity: 1;	
 		}
 		
-		
+				
 		
 		body {
 		overflow:hidden;
@@ -198,6 +205,11 @@ $('#bodyad').hide().fadeIn('4000');
 <h2 id="ls" class="fsad ">Please go on a computer to use the website</h2>
   <style> 
   
+	  .dark {
+	background:fff!important;	  
+	  }
+	  
+	  
 .noss {
 		background: #ffb12a;
     color: #000;
@@ -497,7 +509,7 @@ top:0;
 
 <div id="main" class="main">
 
-<section class="maintop">
+<section id="maintop" class="maintop">
 	<h3 id="text" class="txt">Version 1.7.1</h3>
 <center>
 <h1 class="Hi">Welcome to my website!</h1>
@@ -516,7 +528,7 @@ top:0;
 	
 	
 	
-	<section class="maintop">
+	<section id="maintop" class="maintop">
 <center>
 <h1 class="Hi">(Coming soon)</h1>
 <h2 class="sub hi">(Coming soon) <h2>
@@ -535,6 +547,7 @@ top:0;
 	<h5>I can't fix the flashing issue on the topbar <button onclick="scrolaa()">Go to issue</button><h5>
   <h2>Last update:  Custom 404 page </h2>
 		<h2>Last big update: The 1st big update!<h2>
+			<button onclick="dark">Go to issue</button>
 </div>
 
 <div class="know aboutme">
