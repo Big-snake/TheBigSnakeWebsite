@@ -22,9 +22,29 @@ function dark() {
 		document.getElementById("apaaa").classList.add('darkgra'); 
 		document.getElementById("apaaaa").classList.add('bodydark'); 
 		document.getElementById("apaaaa").style.color = "#fff";
-   document.getElementById("darkmodenable").disabled = true;
+   
+}
+	
+	
+	
+	
+	</script>
+	<script>
+		function light() {
+  document.getElementById("maintop").classList.remove('dark'); 
+	  document.getElementById("myHeader").classList.remove('dark'); 	
+		 document.getElementById("bodyad").classList.remove('bodydark'); 	
+		 document.getElementById("maia").classList.remove('dark'); 
+		 document.getElementById("apa").classList.remove('darkgra'); 
+		document.getElementById("apaa").classList.remove('darkgra'); 
+		document.getElementById("apaaa").classList.remove('darkgra'); 
+		document.getElementById("apaaaa").classList.remove('bodydark'); 
+		document.getElementById("apaaaa").style.color = "#000;
+   
 }
 	</script>
+	
+	
 	
 	<style>
 		#darkmodenable {
@@ -592,6 +612,7 @@ top:0;
   <h2>Last update: The white update </h2>
 		<h2>Last big update: The 1st big update!<h2>
 			<button id="darkmodenable" onclick="dark()">Enable dark mode!</button>
+			<button id="darkmodenable" onclick="light()">Disable dark mode</button>
 </div>
 
 <div id="apaa" class="know aboutme">
