@@ -27,7 +27,17 @@ function scrolaa() {
   
   </script>
 	
-
+<script>
+	  window.onscroll = function() {maa()};
+  function maa() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     window.scrollTo(0, 912);
+  } else {
+      window.scrollTo(0, 0);
+  }
+}
+  
+	</script>
 		
   <script>
   window.onscroll = function() {ada()};
