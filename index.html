@@ -29,12 +29,12 @@ function myas() {
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
            document.getElementById("myHeader").classList.add('nav'); 
 	  document.getElementById("myHeader").classList.remove('ndda');
-	  document.getElementByClassName("ndda").style.color = "#000";
+	  document.getElementById("myHeader").style.color = "#000";
 
   } else {
           document.getElementById("myHeader").classList.remove('nav'); 
 	  document.getElementById("myHeader").classList.add('ndda'); //Hidden
-	  document.getElementByClassName("ndda").style.color = "#fff";
+  document.getElementById("myHeader").style.color = "#fff";
 	  
   }
 }
