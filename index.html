@@ -22,7 +22,22 @@ function dark() {
 		document.getElementById("apaaa").classList.add('darkgra'); 
 		document.getElementById("apaaaa").classList.add('bodydark'); 
 		document.getElementById("apaaaa").style.color = "#fff";
-   
+	document.getElementByClassName("ndda").style.color = "#000";
+   window.onscroll = function() {myas()};
+
+function myas() {
+  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+           document.getElementById("myHeader").classList.add('nav'); 
+	  document.getElementById("myHeader").classList.remove('ndda');
+	  document.getElementByClassName("ndda").style.color = "#000";
+
+  } else {
+          document.getElementById("myHeader").classList.remove('nav'); 
+	  document.getElementById("myHeader").classList.add('ndda'); //Hidden
+	  document.getElementByClassName("ndda").style.color = "#fff";
+	  
+  }
+}
 }
 	
 	
