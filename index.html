@@ -123,10 +123,12 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
            document.getElementById("myHeader").classList.add('nav'); 
+	  	  	document.getElementById("myHeader").style.color = "#fff";
 	  document.getElementById("myHeader").classList.remove('ndda');
 
   } else {
           document.getElementById("myHeader").classList.remove('nav'); 
+	  	document.getElementById("myHeader").style.color = "#000";
 	  document.getElementById("myHeader").classList.add('ndda'); //Hidden
 	  
   }
@@ -154,21 +156,17 @@ function myFunction() {
 
 			  window.setTimeout(rgaa,3000);
 			function rgaa() {
-				
+			document.body.style.overflow = "visible";	
   window.scrollTo(0, 0);
 			}
 
 		
 			
 			
-			  window.setTimeout(rgaas,3000);
-			function rgaas() {
-				document.body.style.overflow = "visible";
-  window.scrollTo(0, 0);
-			}
+		
 			
 
-			}
+			
 }
 		
 	
@@ -597,13 +595,7 @@ top:0;
 <center>
 <h1 class="Hi">Welcome to my website!</h1>
 <h2 class="sub hi">Scroll down!</h2>
-	<h3 class="sub hi">(This website does not fully support phone)</h3>
-	<div class="cssload-thecube">
-	<div class="cssload-cube cssload-c1"></div>
-	<div class="cssload-cube cssload-c2"></div>
-	<div class="cssload-cube cssload-c4"></div>
-	<div class="cssload-cube cssload-c3"></div>
-</div>
+
 </center>
 </section>
 	
