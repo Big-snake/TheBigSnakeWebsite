@@ -75,11 +75,11 @@ text-align:    center;
 text-shadow:   1px 1px #000000;	
 		}
 		.dark {
-		color:#fff !important;	
+		color:#fff ;	
 		}
 		.darkgra:hover {
-		background: rgb(2,0,36) !important;	
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%)!important;	
+		background: rgb(2,0,36) ;	
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%);	
 			transition:2s;	
 		}
 		.darkgra {
@@ -123,12 +123,12 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
            document.getElementById("myHeader").classList.add('nav'); 
-	  	  	document.getElementById("myHeader").style.color = "#fff";
+	  	  	
 	  document.getElementById("myHeader").classList.remove('ndda');
 
   } else {
           document.getElementById("myHeader").classList.remove('nav'); 
-	  	document.getElementById("myHeader").style.color = "#000";
+	  	
 	  document.getElementById("myHeader").classList.add('ndda'); //Hidden
 	  
   }
@@ -199,7 +199,7 @@ $('#bodyad').hide().fadeIn('4000');
 		
 		
 		.bodydark {
-			background:#212121 !important;
+			background:#212121 ;
 		}
 		
 		body {
@@ -631,7 +631,7 @@ top:0;
   <h2>Last update: The white update </h2>
 		<h2>Last big update: The 1st big update!<h2>
 			<button id="darkmodenable" onclick="dark()">Enable dark mode!</button>
-			<button id="darkmodenable" onclick="window.location.reload()">Disable dark mode (<strong>Note:</strong> Refreshes the page) </button>
+			<button id="darkmodenable" onclick="light()">Disable dark mode/button>
 </div>
 
 <div id="apaa" class="know aboutme">
