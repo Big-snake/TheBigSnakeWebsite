@@ -12,6 +12,9 @@ function scrolaa() {
 }
 </script>
 	<style>
+		.lightt.ndda:hover {
+				color:#000!important;
+		}
 		.darkkk.ndda:hover {
 			color:#fff!important;
 		}
@@ -19,9 +22,18 @@ function scrolaa() {
 			color:#000 !important;
 		}
 		
+						.lightt.ndda {
+			color:#fff !important;
+		}
+		
 		
 			.darkkk.nav {
 		color:#fff !important;
+		}
+		
+		
+			.lightt.nav {
+		color:#000 !important;
 		}
 	</style>
 <script type="text/javascript">
@@ -36,7 +48,8 @@ function dark() {
 		document.getElementById("apaaaa").classList.add('bodydark'); 
 		document.getElementById("apaaaa").style.color = "#fff";
 	  document.getElementById("myHeader").style.color= "#000"; 	
-		  document.getElementById("myHeader").classList.add('darkkk'); 	
+		  document.getElementById("myHeader").classList.add('darkkk'); 
+		  document.getElementById("myHeader").classList.remove('lightt'); 
 	
    window.onscroll = function() {myas()};
 
@@ -72,7 +85,7 @@ function myas() {
 		document.getElementById("apaaaa").style.color = "#000";
 			  document.getElementById("myHeader").style.color= "#fff"; 	
 		  document.getElementById("myHeader").classList.remove('darkkk'); 	
-   
+   	  document.getElementById("myHeader").classList.add('lightt'); 
 }
 	</script>
 	
