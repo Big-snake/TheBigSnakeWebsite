@@ -163,19 +163,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%)!impo
 	
 	
 	<script>
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrollFunction()};
 
-function myFunction() {
+function scrollFunction() {
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-           document.getElementById("myHeader").classList.add('nav'); 
-	  	  	
-	  document.getElementById("myHeader").classList.remove('ndda');
-
+    document.getElementById("myHeader").style.top = "0";
   } else {
-          document.getElementById("myHeader").classList.remove('nav'); 
-	  	
-	  document.getElementById("myHeader").classList.add('ndda'); //Hidden
-	  
+    document.getElementById("myHeader").style.top = "-50px";
   }
 }
 
@@ -678,11 +672,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%);
             <h1>Hi, There user!</h1>
   <h1> This is the offical big snake website!</h1>
   <h1 class="wa">This website is 7% finished! </h1>
-	<h1> This update: Dark mode! (ALPHA) </h1>
+	<h1> This update: Fixed flashing issue on topbar! </h1>
 	<h5>I can't fix the flashing issue on the topbar <button onclick="scrolaa()">Go to issue</button><h5>
-  <h2>Last update: The white update </h2>
+  <h2>Last update: Dark mode </h2>
 		<h2>Last big update: The 1st big update!<h2>
-			<button id="darkmodenable" onclick="dark()" >Enable dark mode! </button>
+			<button id="darkmodenable" onclick="dark()" disabled>Enable dark mode! (DISABLED) </button>
 			<button id="darkmodenable" onclick="light()" >Disable dark mode</button>
 </div>
 
