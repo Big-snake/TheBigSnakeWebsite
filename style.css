@@ -4,7 +4,10 @@ body {
   overflow-x: hidden; 
 	
 }
-  
+toptextad {
+	 font-family: Arial, Helvetica, sans-serif;
+}
+
   nav.black {
     background-color:#000;
   }
