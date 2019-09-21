@@ -72,7 +72,7 @@ function dark() {
 	
    window.onscroll = function() {myaaa()};
 function myaaa() {
-  if (document.body.scrollTop > 898 || document.documentElement.scrollTop > 898) {
+  if (document.body.scrollTop > 898 && document.documentElement.scrollTop > 898) {
            document.getElementById("myHeader").classList.add('nav'); 
 	  document.getElementById("myHeader").classList.remove('ndda'); //Show
 	
@@ -85,7 +85,7 @@ function myaaa() {
 <script>
 	   window.onscroll = function() {myaas()};
 function myaas() {
- if (document.body.scrollTop < 902 || document.documentElement.scrollTop < 902) {
+ if (document.body.scrollTop < 902 && document.documentElement.scrollTop < 902) {
           document.getElementById("myHeader").classList.remove('nav'); 
 	  document.getElementById("myHeader").classList.add('ndda'); //Hidden	
 	
