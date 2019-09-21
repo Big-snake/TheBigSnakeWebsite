@@ -77,12 +77,16 @@ function myas() {
 	  document.getElementById("myHeader").classList.remove('ndda');
 	
   } else {
+	    if (document.body.scrollTop > 902 || document.documentElement.scrollTop > 902) {
           document.getElementById("myHeader").classList.remove('nav'); 
 	  document.getElementById("myHeader").classList.add('ndda'); //Hidden
+	  
 	  
   }
 }
 }
+}
+	
 	
 	
 	
