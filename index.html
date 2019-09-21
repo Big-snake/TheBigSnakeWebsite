@@ -83,6 +83,8 @@ function myaaa() {
 }
 	</script>
 <script>
+	   window.onscroll = function() {myaas()};
+function myaas() {
  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
           document.getElementById("myHeader").classList.remove('nav'); 
 	  document.getElementById("myHeader").classList.add('ndda'); //Hidden	
