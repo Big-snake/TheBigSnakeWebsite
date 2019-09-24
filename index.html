@@ -463,7 +463,7 @@ opacity:0;
   </style>
 <nav  onmouseout="black(this)" onmouseover="white(this)" id="myHeader" class="ndda ">
 <h4 class="lxogo">thebigsnakewebsite.co.uk</h4>
-<ul class="sad lxogo">
+<ul class="sad ">
     <a href="/"><li>Home</li></a>
     <a href="/BIOS"><li>Bios </li></a>
     <a href="/upislolgithub"><li>Moto moto</li></a>
@@ -477,10 +477,16 @@ opacity:0;
 		}
 		.sad {
 		   list-style-type:none;
-			display: inline-block;
+			display: inline-flex;
 			float:right!important;
-			color:#009dff;
+			color:#009dff!important;
 		   }
+		
+		a { 
+    display: block;
+    padding: 10px 30px;
+}
+
 	</style>
 	
 <script>
@@ -577,6 +583,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%);
 .ndda:hover {
   background:white;
        transition: 1s; 
+	display:none;
 }
 #myHeader {
      position: sticky;
@@ -591,6 +598,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%);
  font-size: 8rem; 
  
 }
+	.ndda {
+	display:block;	
+	}
 .hi {
      transition: 1s; 
 }  
