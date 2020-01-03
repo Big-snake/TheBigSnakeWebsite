@@ -176,6 +176,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%)!impo
 	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("text").classList.remove('txt'); 
 	  document.getElementById("text").classList.add('hidden'); //Hidden
+		  
   } else {
       document.getElementById("text").classList.add('txt'); 
 	  document.getElementById("text").classList.remove('hidden'); //Hidden
@@ -209,7 +210,7 @@ function myFunction() {
 	  document.getElementById("myHeader").classList.remove('ndda');
   } else {
           document.getElementById("myHeader").classList.remove('nav'); 
-	  	
+	  	          document.getElementById("myHeader").classList.remove('nav'); 
 	  document.getElementById("myHeader").classList.add('ndda'); //Hidden
 	  
   }
@@ -464,9 +465,9 @@ opacity:0;
 <nav  onmouseout="black(this)" onmouseover="white(this)" id="myHeader" class="ndda ">
 <h4 class="lxogo">thebigsnakewebsite.co.uk</h4>
 <ul class="sad ">
-    <a href="/"><li>Home</li></a>
-    <a href="/BIOS"><li>Bios </li></a>
-    <a href="/upislolgithub"><li>Moto moto</li></a>
+    <a href="/"><li id="tophid" class ="tophidd">Home</li></a>
+    <a href="/BIOS"><li id="tophid" class ="tophidd">Bios </li></a>
+    <a href="/upislolgithub"><li id="tophid" class ="tophidd">Moto moto</li></a>
 </nav>
 	<style>
 	#blacksd {
@@ -489,6 +490,7 @@ opacity:0;
     padding: 10px 30px;
 }
 
+	
 	</style>
 	
 <script>
