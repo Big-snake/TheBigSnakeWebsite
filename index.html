@@ -117,6 +117,8 @@ function dark() {
  document.getElementById("maintop").classList.add('dark'); 
 	  document.getElementById("myHeader").classList.add('dark'); 	
 		 document.getElementById("bodyad").classList.add('bodydark'); 	
+			 document.getElementById("aros").classList.add('arodark'); 
+
 	 document.getElementById("main").classList.add('bodydark'); 	
 		 document.getElementById("maia").classList.add('dark'); 
 		 document.getElementById("apa").classList.add('darkgra'); 
@@ -133,6 +135,8 @@ function dark() {
 
 	<script>
 		function light() {
+			 document.getElementById("aros").classList.remove('arodark'); 
+		
    document.getElementById("maintop").classList.remove("dark");
 	  document.getElementById("myHeader").classList.remove('dark'); 	
 		 document.getElementById("main").classList.remove('bodydark'); 	
@@ -390,7 +394,9 @@ p {
 	background:#000 !important;	  
 	  }
 	  
-	  
+	  .arodark{
+	  filter: invert(100%);	  
+	  }
 .noss {
 		background: #ffb12a;
     color: #000;
@@ -592,6 +598,8 @@ top:0;
 }
  
 }
+	
+	
 </style>
 <style>
 darkgra {
@@ -601,6 +609,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%);
 	
 	
 
+	.arodark,.aros {
+	transition:2s !important;	
+	}
 #myHeader {
      position: sticky;
     z-index: 1;
@@ -687,7 +698,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,88,208,1) 61%);
 <h1 class="Hi">Welcome to the big snake website!</h1>
 	<h2 class="sub hi">A Website, made from scratch</h2>
 <h2 class="sub hi">Scroll down!</h2>
-	<image class="aros" src="/aroro.png" width= 100 height=100>
+	<image id ="aros" class="aros" src="/aroro.png" width= 100 height=100>
 </center>
 </section>
 	
