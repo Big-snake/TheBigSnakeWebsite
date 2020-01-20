@@ -12,8 +12,14 @@ function onload() {
         document.getElementById("image").src = blobUrl;
     }
     xhr.send();
+    
 }        
+       
     </script>
+    <script>
+        <script> window.onload = function() { video = document.querySelector('video'); if (video) { video.setAttribute("controlsList", "nodownload"); } }; </script>
+    </script>
+        
 </head>
   <body onload="onload()" data-gr-c-s-loaded="true">
 <video id="image"  src ="" controls loop>
