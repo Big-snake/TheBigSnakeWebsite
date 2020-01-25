@@ -6,6 +6,15 @@
       <link rel="stylesheet" type="text/css" href="https://thebigsnakewebsite.co.uk/vl.css">
    <link rel="stylesheet" type="text/css" href="https://thebigsnakewebsite.co.uk/background.css">
 <script src="/app.js" type="text/javascript"></script>
+<script>
+function unmute(x) {
+  x.muted = false;
+}
+
+function mute(x) {
+  x.muted = true;
+}
+</script>
 </head>
 
 <style>
@@ -38,9 +47,9 @@ video {
   <p>Some of  these videos are open source. feel free to download the open source ones! (and the blob ones if you can..)</p>
 </div>
 <ul>
-<video class="videoa"  src = "https://thebigsnakewebsite.co.uk/videoa.mp4"controls loop autoplay muted></video>
+<video  onmouseover="unmute(this)" onmouseout="mute(this)" class="videoa"  src = "https://thebigsnakewebsite.co.uk/videoa.mp4"controls loop autoplay muted></video>
 <video class="videoa"src = "https://thebigsnakewebsite.co.uk/videoa.mp4"controls loop autoplay muted></video>
 <video  class="videoa"src = "https://thebigsnakewebsite.co.uk/videoa.mp4"controls loop autoplay muted></video>
-<video id="blob" class="videoa" controls loop autoplay muted></video>
+<video id="blobluft" class="videoa" controls loop autoplay muted></video>
 </ul>
 </body>
