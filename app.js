@@ -1,4 +1,4 @@
-function onload() {
+function rhs() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "./luft.mp4");
     xhr.responseType = "arraybuffer";
