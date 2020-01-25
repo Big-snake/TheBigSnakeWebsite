@@ -7,7 +7,7 @@ function rhs() {
         var blob = new Blob([xhr.response]);
         var blobUrl = URL.createObjectURL(blob);
         console.log(blobUrl);
-        document.getElementById("blob").src = blobUrl;
+        document.getElementById("blobluft").src = blobUrl;
     }
     xhr.send();
 }
