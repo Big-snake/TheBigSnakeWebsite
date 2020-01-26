@@ -7,9 +7,8 @@ function rhs() {
         var blob = new Blob([xhr.response]);
         var blobUrl = URL.createObjectURL(blob);
         console.log(blobUrl); 
-                document.getElementById("blobluft_html5_api").src({ src: blobUrl, type: "video/mp4" });
-    }
-             document.getElementById("blobluft").src({ src: blobUrl, type: "video/mp4" });
-    }
+    document.getElementById("blobluft_html5_api").src = blobUrl;
+             document.getElementById("blobluft").src = blobUrl;
+            }
     xhr.send();
 }
