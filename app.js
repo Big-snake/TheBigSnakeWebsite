@@ -7,8 +7,12 @@ function rhs() {
         var blob = new Blob([xhr.response]);
         var blobUrl = URL.createObjectURL(blob);
         console.log(blobUrl); 
-    document.getElementById("blobluft_html5_api").src = blobUrl;
-             document.getElementById("blobluft").src = blobUrl;
+        var player =  document.getElementById("blobluft").src = blobUrl;
+ player.src({
+    src: blobURL,
+    type: "video/mp4"
+  });
             }
     xhr.send();
 }
+             document.getElementById("blobluft").src = blobUrl;
