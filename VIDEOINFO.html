@@ -5,8 +5,29 @@
     <link rel="stylesheet" type="text/css" href="https://thebigsnakewebsite.co.uk/topbars.css">
       <link rel="stylesheet" type="text/css" href="https://thebigsnakewebsite.co.uk/vl.css">
    <link rel="stylesheet" type="text/css" href="https://thebigsnakewebsite.co.uk/background.css">
-<script src="/app.js" type="text/javascript"></script>
+<script src="https://thebigsnakewebsite.co.uk/app.js" type="text/javascript"></script>
+  
+   <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  
+  <link
+  href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+  rel="stylesheet"
+/>
+
+<!-- City -->
+<link
+  href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+  rel="stylesheet"
+/>
+
+  
 <script>
+  
+  
+
 function unmute(x) {
   x.muted = false;
 }
@@ -38,8 +59,9 @@ video {
 
 }
 .videoa {
- padding:10; 
+ padding:10;
 }
+
 </style>
 <body onload="rhs()">
 <div class="block">
@@ -47,9 +69,64 @@ video {
   <p>Some of  these videos are open source. feel free to download the open source ones! (and the blob ones if you can..)</p>
 </div>
 <ul>
-<video onmouseover="unmute(this)" onmouseout="mute(this)" class="videoa"  src = "https://thebigsnakewebsite.co.uk/videoa.mp4"controls loop autoplay muted></video>
-<video onmouseover="unmute(this)" onmouseout="mute(this)" class="videoa"src = "https://thebigsnakewebsite.co.uk/videoa.mp4"controls loop autoplay muted></video>
-<video onmouseover="unmute(this)" onmouseout="mute(this)" class="videoa"src = "https://thebigsnakewebsite.co.uk/videoa.mp4"controls loop autoplay muted></video>
-<video onmouseover="unmute(this)" onmouseout="mute(this)" src="" id="blobluft" class="videoa" controls loop autoplay muted></video>
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    data-setup="{}"
+  >
+    <source src="https://thebigsnakewebsite.co.uk/videoa.mp4" type="video/mp4" />
+  
+  </video>
+  
+  
+   <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    data-setup="{}"
+  >
+    <source src="https://thebigsnakewebsite.co.uk/videoa.mp4" type="video/mp4" />
+  
+  </video>
+  
+  
+   <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    data-setup="{}"
+  
+  >
+    <source src="https://thebigsnakewebsite.co.uk/videoa.mp4" type="video/mp4" />
+  
+  </video>
+  
+  
+   <video
+    id="blobluft"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    data-setup="{}"
+  >
+       <source id="blobluft" src="" type="video/mp4" />
+  
+  </video>
+  
 </ul>
+ <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
+ 
+ 
 </body>
