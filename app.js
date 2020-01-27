@@ -8,15 +8,8 @@ function rhs() {
         var blobUrl = URL.createObjectURL(blob);
         console.log(blobUrl); 
         var playe =  document.getElementById("blobluft_html5_api").src = blobUrl;
- player.src({
-    src: blobURL,
-    type: "video/mp4"
-  });
-         playe.src({
-    src: blobURL,
-    type: "video/mp4"
-  });
-            }
+        
+    }
     xhr.send();
 }
              document.getElementById("blobluft").src = blobUrl;
