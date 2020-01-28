@@ -26,8 +26,14 @@
 fetch("https://thebigsnakewebsite.co.uk/luft.mp4")
   .then(result => result.blob())
   .then(blob => {
+     const xhr = new XMLHttpRequest();
     const player = videojs("blobluft");
+    const blobURL = responseType = "arraybuffer";
+    xhr.responseType = "arraybuffer";
+ 
     const blobURL = URL.createObjectURL(blob);
+    
+    
   
     player.src({ src: blobURL, type: "video/mp4" });
   }
@@ -143,7 +149,7 @@ video {
    <video
           type="video/mp4"
  id="blobluft"
-    class="video-js vjs-theme-city"
+    class="video-js vjs-theme-forest"
     controls
     preload="auto"
     width="640"
