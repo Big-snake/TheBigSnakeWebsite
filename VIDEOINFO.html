@@ -23,19 +23,22 @@
 }, false);
   </script>
 <script type="text/babel">
-fetch("https://thebigsnakewebsite.co.uk/luft.mp4")
-  .then(result => result.blob())
-  .then(blob => {
-    const player = videojs("blobluft");
-   
-    const blobURL = URL.createObjectURL(blob);
-    
-    
-  
-    player.src({ src: blobURL, type: "video/mp4" });
-  }
-)
-
+const FileSaver = require('file-saver');
+const axios = require('axios');
+const player= videojs("blobluft");
+axios.get('/luft.mp4', {
+      responseType: 'arraybuffer',
+      headers: {
+        'Accept': 'video/mp4'
+      }
+}).then(response => {
+    console.log(response);
+    // response.data is an empty object
+    const blob = new Blob([response.data], {
+      type: 'video/mp4',
+    });
+  player.src({ src: blobURL, type: "video/mp4" });
+});
 
 </script>
   <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
