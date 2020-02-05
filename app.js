@@ -8,8 +8,9 @@ function rhs() {
         var blobUrl = URL.createObjectURL(blob);
         console.log(blobUrl); 
         var playe =  document.getElementById("blobluft_html5_api").src = blobUrl;
-        
+          URL.revokeObjectURL(playe.src);  
     }
     xhr.send();
 }
-             document.getElementById("blobluft").src = blobUrl;
+           
+   document.getElementById("blobluft").src = blobUrl;
