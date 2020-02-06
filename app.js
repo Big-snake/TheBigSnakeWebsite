@@ -1,7 +1,7 @@
 function rhs() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "./luft.mp4");
-    xhr.responseType = "arraybuffer";
+    xhr.responseType = "document";
  
     xhr.onload = function(error) {
         var blob = new Blob([xhr.response]);
