@@ -1,4 +1,4 @@
-  var video = document.getElementById("blobluft_html5_api").src = blobUrl;
+  var video = document.getElementById("blobluft_html5_api")
 
       var assetURL = 'https://nickdesaulniers.github.io/netfix/demo/frag_bunny.mp4';
       // Need to be specific for Blink regarding codecs
