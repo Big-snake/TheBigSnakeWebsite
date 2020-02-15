@@ -23,17 +23,17 @@
 }, false);
   </script>
 <script type="text/babel">
-fetch("https://thebigsnakewebsite.co.uk/luft.mp4")
-  .then(result => result.blob())
-  .then(blob => {
-  const xhr = new XMLHttpRequest();
-    const player = videojs("blobluft");
-    xhr.responseType = "arraybuffer";
-    const blobURL = URL.createObjectURL(blob);
+//fetch("https://thebigsnakewebsite.co.uk/luft.mp4")
+  //.then(result => result.blob())
+ // .then(blob => {
+  // const xhr = new XMLHttpRequest();
+   // const player = videojs("blobluft");
+   // xhr.responseType = "arraybuffer";
+ //   const blobURL = URL.createObjectURL(blob);
     
     
   
-    player.src({ src: blobURL, type: "video/mp4" });
+  //  player.src({ src: blobURL, type: "video/mp4" });
   }
 )
 
